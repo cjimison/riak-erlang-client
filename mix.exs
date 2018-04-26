@@ -1,7 +1,7 @@
 defmodule Riakc.Mixfile do
   use Mix.Project
 
-  @version File.read!("VERSION") |> String.strip
+  @version File.read!("VERSION") |> String.trim()
 
   def project do
     [app: :riakc,
